@@ -13,7 +13,7 @@ import { CatModule } from './cat/cat.module';
       options: () => {},
       uri: (tenantId: string) => 'mongodb://localhost/nest',
     }),
-    // MongooseModule.forRoot('mongodb://localhost/nest'),
+    MongooseModule.forRoot('mongodb://localhost/nest'),
     ScheduleModule.forRoot(),
     CatModule,
   ],
